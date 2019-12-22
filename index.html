@@ -1,30 +1,17 @@
 <head>
-    <title>Good morning Rye Country Day good morning Rye Country Day</title>
-    <link rel="stylesheet" href="style.css">
+	<title>Graphic design is my passion</title>
 </head>
 <body>
-<h1>Good morning Rye Country Day good morning Rye Country Day</h1>
-<p>Good (morning/afternoon). Testing will begin after you complete the
-identification information on your answer sheet. The College Board is obligated
-to report scores that accurately reflect your performance. Therefore, exam
-administration and security procedures are in place to ensure that all of you
-have an equal opportunity to demonstrate your abilities and that no one has an
-unfair advantage. Please listen carefully to the following instructions.
-If your bags have not been collected, close all bags now and place them on the
-floor under your chair; you are not permitted to access your bags or any
-unauthorized aids at any time, including during the break, until you are dismissed
-at the end of the exam. The following electronic equipment is prohibited:
-phones, smartwatches or wearable technology of any kind, laptops, tablet
-computers, Bluetooth devices, portable listening or recording devices—MP3
-player, iPod®
-, etc.—cameras or other photographic equipment, devices that can
-access the internet, separate timers of any type, and any other electronic or
-communication devices. If you are observed with any of these devices at any
-time during testing or during breaks, the device will be confiscated, you will be
-dismissed, and your score may be canceled. If the College Board determines
-that you tried to gain an unfair advantage, you may be banned from future
-College Board assessments.
-If you have any of these devices, bring them to me now. Make sure each device
-is turned off. You may pick them up when you are dismissed. Are there any
-questions?</p>
+	<h1 id="test">Graphic design is my passion</h1>
+	<button>clic me</button>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("button").click(function() {
+				$.get("text.txt", function(data, status) {
+					$("#test").html(data);
+				})
+			})
+		});
+	</script>
 </body>
